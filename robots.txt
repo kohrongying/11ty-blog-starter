@@ -1,0 +1,4 @@
+Sitemap: https://rongying.co/sitemap.xml
+
+User-agent: *
+Disallow:

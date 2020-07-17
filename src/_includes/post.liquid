@@ -1,0 +1,18 @@
+---
+layout: base.liquid
+---
+
+{% include nav %}
+
+<p class="text-5xl md:text-6xl font-black pt-10 md:pt-30 pb-4 leading-tight">
+    {{ title}}
+</p>
+
+<div class="pb-10">
+    <em>{{ date | date: "%Y-%m-%d" }}</em> &middot; 
+    <span>{{ content | readTime }} min read</span>
+</div>
+
+{{ content }}
+
+{% include footer %}

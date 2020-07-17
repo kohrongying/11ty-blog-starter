@@ -1,0 +1,24 @@
+---
+layout: main
+title: Blog<br>部落格
+pagination:
+  data: collections.posts
+  size: 1
+  reverse: true
+  alias: posts
+---
+
+{% for post in pagination.items %}
+<div class="py-4">
+  <p>
+    <span class="text-2xl sm:text-4xl font-bold hover:text-indigo-500"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
+    <span class="text-base sm:text-2xl font-normal"> &middot; {{ post.templateContent | readTime }} min read</span>
+  </p>
+  <em>{{ post.date | date: "%Y-%m-%d" }}</em>
+  <p class="mt-4">{{ post.data.post_excerpt }}... 
+    <span class="hover:underline text-indigo-500"><a href="{{ post.url }}">Read More</a></span>
+  </p>
+</div>
+{% endfor %}
+
+{% include paginator %}
