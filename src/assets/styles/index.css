@@ -1,0 +1,12 @@
+.markdown li + li {
+  margin-top: 0.25rem;
+}
+
+.markdown li > p + p {
+  margin-top: 1.5rem;
+}
+
+.markdown * + * {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
