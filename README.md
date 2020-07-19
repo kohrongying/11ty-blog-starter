@@ -1,4 +1,7 @@
 # Blog starter
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a9b962b7-9df1-49db-9b40-e5fedbc8ba9e/deploy-status)](https://app.netlify.com/sites/eleventy-blog-starter/deploys)
+
 View the live demo [here](https://eleventy.rongying.co/), hosted on Netlify
 
 ![homepage](blog.png)
@@ -54,7 +57,9 @@ npm start
 
 
 ## Deployment
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a9b962b7-9df1-49db-9b40-e5fedbc8ba9e/deploy-status)](https://app.netlify.com/sites/eleventy-blog-starter/deploys)
+[<img src="https://www.netlify.com/img/deploy/button.svg" />](
+https://app.netlify.com/start/deploy?repository=https://github.com/kohrongying/11ty-blog-starter)
+
 
 
 On Netlify / Surge / Firebase hosting / etc hosting providers
