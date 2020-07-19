@@ -8,6 +8,7 @@ pagination:
   alias: posts
 ---
 
+<main>
 {% for post in pagination.items %}
 <div class="py-4">
   <p>
@@ -16,9 +17,11 @@ pagination:
   </p>
   <em>{{ post.date | date: "%Y-%m-%d" }}</em>
   <p class="mt-4">{{ post.data.post_excerpt }}... 
-    <span class="hover:underline text-indigo-500"><a href="{{ post.url }}">Read More</a></span>
+  <a class="hover:underline font-semibold text-blue-700" href="{{ post.url }}">Read this post</a>
   </p>
 </div>
 {% endfor %}
 
+
 {% include paginator %}
+</main>

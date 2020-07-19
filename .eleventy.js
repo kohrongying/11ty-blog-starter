@@ -4,7 +4,7 @@ const markdownItClass = require('@toycode/markdown-it-class')
 
 // Map tailwind classes to html elements for markdown styling
 const mapping = {
-  a:[ 'text-blue-600', 'font-semibold', 'hover:underline' ],
+  a:[ 'text-blue-700', 'font-semibold', 'hover:underline' ],
   h1: [
     'leading-tight',
     'border-b',
