@@ -7,6 +7,7 @@
     "start": "npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --no-ignore .eleventy.js",
+    "lint:fix": "eslint . --no-ignore .eleventy.js --fix",
     "build": "npx @11ty/eleventy"
   },
   "keywords": [],
