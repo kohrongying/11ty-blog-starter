@@ -28,6 +28,10 @@ A blog that still runs without javascript. Hence, no bundlers.
 + Sitemap and Robots.txt 
   - Change site url in `_data/site.json`
 
++ Shortcode to handle images
+  - Add image under `src/assets/img/posts` and use the asset_img short code
+  - `{% asset_img 'filename' 'alt_text' %}` eg. `{% asset_img 'mailbox.jpg' 'mailbox' %}`
+
 + Posts pagination in `index.html` 
   - change the `size` frontmatter variable
 - ESLint

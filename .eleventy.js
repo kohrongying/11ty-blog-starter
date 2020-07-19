@@ -2,6 +2,7 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const markdownIt = require('markdown-it')
 const markdownItClass = require('@toycode/markdown-it-class')
 
+// Map tailwind classes to html elements for markdown styling
 const mapping = {
   a:[ 'text-blue-600', 'font-semibold', 'hover:underline' ],
   h1: [
@@ -95,6 +96,7 @@ module.exports = function(eleventyConfig) {
     return Math.max(1, Math.floor(textOnly.length / readingSpeedPerMin))
   })
 
+  // Enable us to iterate over all the tags, excluding posts and all
   eleventyConfig.addCollection('tagList', collection => {
     const tagsSet = new Set()
     collection.getAll().forEach(item => {
@@ -109,6 +111,12 @@ module.exports = function(eleventyConfig) {
   const md = markdownIt({ linkify: true, html: true })
   md.use(markdownItClass, mapping)
   eleventyConfig.setLibrary('md', md)
+
+  // asset_img shortcode
+  eleventyConfig.addLiquidShortcode("asset_img", (filename, alt) => {
+    console.log('file', filename)
+    return `<img class="my-4" src="/assets/img/posts/${filename}" alt="${alt}" />`
+  })
 
   return {
     dir: {
