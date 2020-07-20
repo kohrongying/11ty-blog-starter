@@ -51,6 +51,7 @@ const mapping = {
     'rounded',
     'px-1',
     'py-05'
+    'overflow-auto',
   ],
   pre: [ 'bg-gray-100', 'rounded', 'p-4' ],
   ul: [ 'text-base', 'pl-8', 'list-disc' ],
