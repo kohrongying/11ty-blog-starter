@@ -1,7 +1,7 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const markdownIt = require('markdown-it')
 const markdownItClass = require('@toycode/markdown-it-class')
-const pluginPWA = require("eleventy-plugin-pwa")
+const pluginPWA = require('eleventy-plugin-pwa')
 
 // Map tailwind classes to html elements for markdown styling
 const mapping = {
@@ -75,7 +75,7 @@ const mapping = {
 module.exports = function(eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(syntaxHighlight)
-  eleventyConfig.addPlugin(pluginPWA);
+  eleventyConfig.addPlugin(pluginPWA)
   
   // To enable merging of tags
   eleventyConfig.setDataDeepMerge(true)
@@ -116,8 +116,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary('md', md)
 
   // asset_img shortcode
-  eleventyConfig.addLiquidShortcode("asset_img", (filename, alt) => {
-    console.log('file', filename)
+  eleventyConfig.addLiquidShortcode('asset_img', (filename, alt) => {
     return `<img class="my-4" src="/assets/img/posts/${filename}" alt="${alt}" />`
   })
 
