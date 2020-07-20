@@ -95,7 +95,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('readTime', (value) => {
     const content = value
     const textOnly = content.replace(/(<([^>]+)>)/gi, '')
-    const readingSpeedPerMin = 300
+    const readingSpeedPerMin = 450
     return Math.max(1, Math.floor(textOnly.length / readingSpeedPerMin))
   })
 

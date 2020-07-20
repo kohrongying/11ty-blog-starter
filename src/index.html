@@ -12,7 +12,7 @@ pagination:
 {% for post in pagination.items %}
 <div class="py-4">
   <p>
-    <span class="text-2xl sm:text-4xl font-bold hover:text-indigo-500"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
+    <span class="text-2xl sm:text-4xl font-bold hover:text-blue-700 leading-tight"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
     <span class="text-base sm:text-2xl font-normal"> &middot; {{ post.templateContent | readTime }} min read</span>
   </p>
   <em>{{ post.date | date: "%Y-%m-%d" }}</em>
