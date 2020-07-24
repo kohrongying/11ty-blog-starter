@@ -1,4 +1,5 @@
 {
     "layout": "post.liquid",
-    "tags": ["posts"]
+    "tags": ["posts"],
+    "published": true
 }

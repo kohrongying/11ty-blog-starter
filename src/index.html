@@ -10,6 +10,7 @@ pagination:
 
 <main>
 {% for post in pagination.items %}
+{% if post.data.published %}
 <div class="py-4">
   <p>
     <span class="text-2xl sm:text-4xl font-bold hover:text-blue-700 leading-tight"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
@@ -20,6 +21,7 @@ pagination:
   <a class="hover:underline font-semibold text-blue-700" href="{{ post.url }}">Read this post</a>
   </p>
 </div>
+{% endif %}
 {% endfor %}
 
 

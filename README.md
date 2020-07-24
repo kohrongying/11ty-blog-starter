@@ -19,6 +19,8 @@ A blog that still runs without javascript. Hence, no bundlers.
   - Mapping in `.eleventy.js`
   - Styles taken from this helpful [repo](https://github.com/iandinwoodie/github-markdown-tailwindcss/blob/master/markdown.css)
 
+- Create excerpts using the `<!-- excerpt -->`
+
 - Custom ReadTime filter
 
 - 404 page
@@ -34,6 +36,8 @@ A blog that still runs without javascript. Hence, no bundlers.
 + Shortcode to handle images
   - Add image under `src/assets/img/posts` and use the asset_img short code
   - `{% asset_img 'filename' 'alt_text' %}` eg. `{% asset_img 'mailbox.jpg' 'mailbox' %}`
+
+- Draft posts using the `published` frontmatter
 
 + Posts pagination in `index.html` 
   - change the `size` frontmatter variable
