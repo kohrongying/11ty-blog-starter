@@ -50,7 +50,7 @@ const mapping = {
     'bg-gray-200',
     'rounded',
     'px-1',
-    'py-05'
+    'py-05',
     'overflow-auto',
   ],
   pre: [ 'bg-gray-100', 'rounded', 'p-4' ],
