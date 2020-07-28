@@ -1,7 +1,6 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const markdownIt = require('markdown-it')
 const markdownItClass = require('@toycode/markdown-it-class')
-const pluginPWA = require('eleventy-plugin-pwa')
 
 // Map tailwind classes to html elements for markdown styling
 const mapping = {
@@ -76,7 +75,6 @@ const mapping = {
 module.exports = function(eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(syntaxHighlight)
-  eleventyConfig.addPlugin(pluginPWA)
   
   // To enable merging of tags
   eleventyConfig.setDataDeepMerge(true)

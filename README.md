@@ -42,7 +42,7 @@ A blog that still runs without javascript. Hence, no bundlers.
 + Posts pagination in `index.html` 
   - change the `size` frontmatter variable
 - ESLint
-- PWA Support
+
 + Node script to create new post (based on YYYY and MM)
 ```bash
 node createMdScript.js this is my title
