@@ -20,7 +20,18 @@ pagination:
   <p class="mt-4">{{ post.data.post_excerpt }}... 
   <a class="hover:underline font-semibold text-blue-700" href="{{ post.url }}">Read this post</a>
   </p>
+  
+  <div class="mt-2">
+    {% for tag in post.data.tags %}
+      {% if tag != "posts" %}
+        <a href="/tags/{{ tag }}">
+          <span class="text-xs rounded-full py-2 px-4 mt-1 mr-1 bg-gray-300">{{ tag }}</span>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
+
 {% endif %}
 {% endfor %}
 

@@ -4,7 +4,7 @@
 
 View the live demo [here](https://eleventy.rongying.co/), hosted on Netlify
 
-![homepage](blog.png)
+![homepage](blog-v2.png)
 
 
 ## Aims
@@ -73,8 +73,9 @@ Build Command: `npm run build`
 
 Output folder: `_site`
 
-
+<!--
 ## Future Improvemeents
 
 - [ ] Minification of assets
 - [ ] Make next/prev posts
+-->
