@@ -43,11 +43,10 @@ A blog that still runs without javascript. Hence, no bundlers.
   - change the `size` frontmatter variable
 - ESLint
 
-+ Node script to create new post (based on YYYY and MM)
++ Bash script to create new post (based on YYYY and MM)
 ```bash
-node createMdScript.js this is my title
-
-$ Created new post at src/posts/2020/07/this-is-my-title.md
+$ ./create new blog post
+Created new post at src/posts/2021/01/new-blog-post.md
 ```
 
 
