@@ -1,5 +1,18 @@
-<div class="h-20"></div>
-<footer class="absolute bottom-0 left-0 right-0">
-  <p class="text-sm py-2 border-t-2 mx-8">Built with Eleventy and Tailwindcss. Works without Javascript. Template by kohrongying.
-  </p>
+<footer class="mt-8 bg-gray-200 py-8 flex-shrink-0">
+  <div class="max-w-screen-sm md:max-w-screen-md mx-auto px-8">
+    <p class="text-sm py-2 text-right">
+      {% if site.github != "" %}
+        <a href={{ site.github }}>Github</a> 
+      {% endif %}
+
+      {% if site.linkedin != "" %}
+        &middot; <a href={{ site.linkedin }}>LinkedIn</a>
+      {% endif %}
+
+      {% if site.twitter != "" %}
+        &middot; <a href={{ site.twitter }}>Twitter</a>
+      {% endif %}
+
+    </p>
+  </div>
 </footer>

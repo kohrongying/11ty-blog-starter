@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: default
 pagination:
   data: collections
   size: 1

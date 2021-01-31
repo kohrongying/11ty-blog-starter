@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: default
 title: Blog<br>部落格
 pagination:
   data: collections.posts
@@ -8,7 +8,6 @@ pagination:
   alias: posts
 ---
 
-<main>
 {% for post in pagination.items %}
 {% if post.data.published %}
 <div class="py-4">
@@ -32,7 +31,7 @@ pagination:
 
     <a class="flex-none hover:underline font-semibold text-blue-700" href="{{ post.url }}">Read this post &rarr;</a>
   </div>
-  
+
 </div>
 
 {% endif %}
@@ -40,4 +39,3 @@ pagination:
 
 
 {% include paginator %}
-</main>
