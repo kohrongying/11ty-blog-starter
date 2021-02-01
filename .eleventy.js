@@ -1,5 +1,6 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const markdownIt = require('markdown-it')
+const markdownItAnchor = require('markdown-it-anchor')
 
 module.exports = function(eleventyConfig) {
   // Plugins
@@ -40,6 +41,7 @@ module.exports = function(eleventyConfig) {
   })
 
   const md = markdownIt({ linkify: true, html: true })
+  md.use(markdownItAnchor, { level: [1, 2], permalink: true, permalinkBefore: false, permalinkSymbol: '#' })
   eleventyConfig.setLibrary('md', md)
 
   // asset_img shortcode
