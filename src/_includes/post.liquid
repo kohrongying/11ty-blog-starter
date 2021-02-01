@@ -17,7 +17,7 @@ layout: main
   {% for tag in tags %}
     {% if tag != "posts" %}
       <a href="/tags/{{ tag }}">
-        <span class="text-xs rounded-full py-2 px-4 mt-1 mr-1 bg-gray-300">{{ tag }}</span>
+        <span class="post-tag">{{ tag }}</span>
       </a>
     {% endif %}
   {% endfor %}

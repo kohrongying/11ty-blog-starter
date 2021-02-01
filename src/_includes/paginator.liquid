@@ -2,12 +2,12 @@
     <div class="inline-flex">
       {% if page.url != pagination.href.first %}
         <a href="{{ pagination.href.first }}">
-          <button class="text-gray-800 font-bold py-2 px-4 rounded-l">
+          <button class="paginator-text">
             First
           </button>
         </a>
       {% else %}
-        <button class="text-gray-800 font-bold py-2 px-4 rounded-l cursor-not-allowed">
+        <button class="paginator-text cursor-not-allowed">
           First
         </button>
       {% endif %}
@@ -57,12 +57,12 @@
 
       {% if page.url != pagination.href.last %}
         <a href="{{ pagination.href.last }}">
-          <button class="text-gray-800 font-bold py-2 px-4 rounded-r">
+          <button class="paginator-text">
             Last
           </button>
         </a>
       {% else %}
-        <button class="text-gray-800 font-bold py-2 px-4 rounded-r cursor-not-allowed">
+        <button class="paginator-text cursor-not-allowed">
           Last
         </button>
       {% endif %}
