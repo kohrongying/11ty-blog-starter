@@ -19,6 +19,7 @@
     "eslint": "^7.12.1"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.4.0",
     "@toycode/markdown-it-class": "^1.2.4",
     "autoprefixer": "^10.2.4",
     "postcss-cli": "^8.3.1",

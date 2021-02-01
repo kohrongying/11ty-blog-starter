@@ -1,76 +1,5 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const markdownIt = require('markdown-it')
-const markdownItClass = require('@toycode/markdown-it-class')
-
-// Map tailwind classes to html elements for markdown styling
-const mapping = {
-  a:[ 'text-blue-700', 'font-semibold', 'hover:underline' ],
-  h1: [
-    'leading-tight',
-    'border-b',
-    'text-4xl',
-    'font-semibold',
-    'mb-4',
-    'mt-6',
-    'pb-2'
-  ],
-  h2: [
-    'leading-tight',
-    'border-b',
-    'text-2xl',
-    'font-semibold',
-    'mb-4',
-    'mt-6',
-    'pb-2'
-  ],
-  h3: [ 'leading-snug', 'text-lg', 'font-semibold', 'mb-4', 'mt-6' ],
-  h4: [ 'leading-none', 'text-base', 'font-semibold', 'mb-4', 'mt-6' ],
-  h5: [ 'leading-tight', 'text-sm', 'font-semibold', 'mb-4', 'mt-6' ],
-  h6: [
-    'leading-tight',
-    'text-sm',
-    'font-semibold',
-    'text-gray-600',
-    'mb-4',
-    'mt-6'
-  ],
-  blockquote: [
-    'text-base',
-    'border-l-4',
-    'border-gray-300',
-    'pl-4',
-    'pr-4',
-    'text-gray-600'
-  ],
-  code: [
-    'font-mono',
-    'text-sm',
-    'inline',
-    'bg-gray-200',
-    'rounded',
-    'px-1',
-    'py-05',
-    'overflow-auto',
-  ],
-  pre: [ 'bg-gray-100', 'rounded', 'p-4' ],
-  ul: [ 'text-base', 'pl-8', 'list-disc' ],
-  ol: [ 'text-base', 'pl-8', 'list-decimal' ],
-  kbd: [
-    'text-xs',
-    'inline-block',
-    'rounded',
-    'border',
-    'px-1',
-    'py-05',
-    'align-middle',
-    'font-normal',
-    'font-mono',
-    'shadow'
-  ],
-  table: [ 'text-base', 'border-gray-600', 'w-full' ],
-  th: [ 'border', 'py-1', 'px-3' ],
-  td: [ 'border', 'py-1', 'px-3' ],
-}
 
 module.exports = function(eleventyConfig) {
   // Plugins
@@ -111,7 +40,6 @@ module.exports = function(eleventyConfig) {
   })
 
   const md = markdownIt({ linkify: true, html: true })
-  md.use(markdownItClass, mapping)
   eleventyConfig.setLibrary('md', md)
 
   // asset_img shortcode
