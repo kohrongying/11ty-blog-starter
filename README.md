@@ -5,7 +5,7 @@
 View the live demo [here](https://eleventy.rongying.co/), hosted on Netlify
 
 ![homepage](blog-v2.png)
-
+![darkmode](blog-dark.png)
 
 ## Aims
 A blog that still runs without javascript. Hence, no bundlers. 
@@ -14,10 +14,7 @@ A blog that still runs without javascript. Hence, no bundlers.
 ## Features
 - Static Site Gen - Eleventy
 
-- CSS Framework - Tailwindcss (through CDN)
-+ Tailwind Styling with Markdown
-  - Mapping in `.eleventy.js`
-  - Styles taken from this helpful [repo](https://github.com/iandinwoodie/github-markdown-tailwindcss/blob/master/markdown.css)
+- Tailwind CSS v2.0 / Tailwind Typography / Dark Mode
 
 - Create excerpts using the `<!-- excerpt -->`
 
