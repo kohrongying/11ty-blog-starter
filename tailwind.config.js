@@ -1,53 +1,53 @@
 module.exports = {
   darkMode: 'class',
-  purge: ['./src/**/*.md', './_includes/**/*.liquid'],
+  content: ['./src/**/*.md', './src/_includes/**/*.liquid'],
   theme: {
     extend: {
       typography: (theme) => ({
         dark: {
           css: {
-            color: "white",
+            color: 'white',
             a: {
-              color: "#9ECE6A",
-              "&:hover": {
-                color: "#9ECE6A",
+              color: '#9ECE6A',
+              '&:hover': {
+                color: '#9ECE6A',
               },
             },
             h1: {
-              color: "white",
+              color: 'white',
             },
             h2: {
-              color: "white",
+              color: 'white',
             },
             h3: {
-              color: "white",
+              color: 'white',
             },
             h4: {
-              color: "white",
+              color: 'white',
             },
             h5: {
-              color: "white",
+              color: 'white',
             },
             h6: {
-              color: "white",
+              color: 'white',
             },
             th: {
-              color: "white",
+              color: 'white',
             },
             strong: {
-              color: "white",
+              color: 'white',
             },
-            "blockquote p": {
-              color: "white",
+            'blockquote p': {
+              color: 'white',
             },
             code: {
-              color: "white",
+              color: 'white',
             },
             figcaption: {
-              color: theme("colors.gray.500"),
+              color: theme('colors.gray.500'),
             },
-            "::selection": {
-              backgroundColor: "white",
+            '::selection': {
+              backgroundColor: 'white',
             },
           },
         }

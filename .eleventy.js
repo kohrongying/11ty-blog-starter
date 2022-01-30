@@ -40,8 +40,11 @@ module.exports = function(eleventyConfig) {
     return Array.from(tagsSet).sort()
   })
 
-  const md = markdownIt({ linkify: true, html: true })
-  md.use(markdownItAnchor, { level: [1, 2], permalink: true, permalinkBefore: false, permalinkSymbol: '#' })
+  const md = markdownIt()
+  md.use(markdownItAnchor, { 
+    level: [1, 2], 
+    permalink: markdownItAnchor.permalink.headerLink({ safariReaderFix: true })
+  })
   eleventyConfig.setLibrary('md', md)
 
   // asset_img shortcode
