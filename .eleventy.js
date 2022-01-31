@@ -40,10 +40,13 @@ module.exports = function(eleventyConfig) {
     return Array.from(tagsSet).sort()
   })
 
-  const md = markdownIt()
+  const md = markdownIt({ html: true, linkify: true })
   md.use(markdownItAnchor, { 
     level: [1, 2], 
-    permalink: markdownItAnchor.permalink.headerLink({ safariReaderFix: true })
+    permalink: markdownItAnchor.permalink.headerLink({ 
+      safariReaderFix: true,
+      class: 'header-anchor',
+    })
   })
   eleventyConfig.setLibrary('md', md)
 

@@ -1,4 +1,11 @@
 .header-anchor {
-  color: grey!important;
   text-decoration: none!important;
+}
+
+h1 > a.header-anchor {
+  font-weight: 800;
+}
+
+h2 > a.header-anchor {
+  font-weight: 700;
 }
