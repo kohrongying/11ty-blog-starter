@@ -16,7 +16,8 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
-    "eslint": "^7.12.1"
+    "eslint": "^7.12.1",
+    "postcss": "^8.4.5"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.1",
