@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
-    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
+    "start": "npx @11ty/eleventy --serve & npx @tailwindcss/cli -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve & npx @tailwindcss/cli -i ./tailwind.css -o _site/assets/styles/tailwind.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "build": "npx @11ty/eleventy & npx tailwindcss -i ./tailwind.css -o _site/assets/styles/tailwind.css"
+    "build": "npx @11ty/eleventy & npx @tailwindcss/cli -i ./tailwind.css -o _site/assets/styles/tailwind.css"
   },
   "keywords": [],
   "author": "",
@@ -17,14 +17,15 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.5",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "@tailwindcss/cli": "^4.2.2",
     "eslint": "^7.12.1",
     "postcss": "^8.4.5"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
     "@tailwindcss/typography": "^0.5.1",
-    "autoprefixer": "^10.4.2",
     "markdown-it": "^12.3.2",
     "markdown-it-anchor": "^8.4.1",
-    "tailwindcss": "^3.0.18"
+    "tailwindcss": "^4.2.2"
   }
 }

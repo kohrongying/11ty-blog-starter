@@ -12,9 +12,9 @@ A blog that still runs without javascript. Hence, no bundlers.
 
 
 ## Features
-- Static Site Gen - Eleventy
+- Static Site Gen - Eleventy v3
 
-- Tailwind CSS v2.0 / Tailwind Typography / Dark Mode
+- Tailwind CSS v4 / Tailwind Typography / Dark Mode
 
 - Create excerpts using the `<!-- excerpt -->`
 
