@@ -27,7 +27,7 @@
   "dependencies": {
     "@tailwindcss/postcss": "^4.2.2",
     "@tailwindcss/typography": "^0.5.1",
-    "markdown-it": "^12.3.2",
+    "markdown-it": "^14.2.0",
     "markdown-it-anchor": "^8.4.1",
     "tailwindcss": "^4.2.2"
   }
