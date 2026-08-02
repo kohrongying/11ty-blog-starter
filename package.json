@@ -22,7 +22,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
     "@tailwindcss/cli": "^4.0.15",
     "eslint": "^7.12.1",
-    "postcss": "^8.4.5"
+    "postcss": "^8.5.25"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.2.2",
